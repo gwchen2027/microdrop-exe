@@ -1,0 +1,26 @@
+# MicroDrop 2 Conda environment definition
+# ----------------------------------------
+#
+# See `README.md` for more information.
+name: microdrop-exe
+channels:
+  - sci-bots/label/py2exe
+  - sci-bots/label/dropbot
+  - dropbot
+  - sci-bots/label/microdrop-2-plugins
+  - sci-bots/label/microdrop-2
+  - sci-bots
+  - conda-forge
+  - defaults
+dependencies:
+  - microdrop
+  - microdrop.dmf-device-ui-plugin
+  - microdrop.dropbot-plugin
+  - microdrop.droplet-planning-plugin
+  - microdrop.step-label-plugin
+  - microdrop.user-prompt-plugin
+  - microdrop.joypad-control-plugin
+  - microdrop-plugin-manager
+  - cycler=0.10=1  # See https://github.com/sci-bots/cycler-recipe
+  - py2exe=0.6.9=py27
+  - py2exe-helpers=0.2.7=0
